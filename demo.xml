@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<root>
+    <datafile/>
+    <datafile>
+        <SlNo>1.0</SlNo>
+        <Name>Lokesh</Name>
+        <UserID>11.0</UserID>
+        <Price>30.0</Price>
+    </datafile>
+    <datafile>
+        <SlNo>2.0</SlNo>
+        <Name>Rockz</Name>
+        <UserID>21.0</UserID>
+        <Price>45.0</Price>
+    </datafile>
+    <datafile>
+        <SlNo>3.0</SlNo>
+        <Name>Holmes</Name>
+        <UserID>31.0</UserID>
+        <Price>55.0</Price>
+    </datafile>
+    <datafile>
+        <SlNo>4.0</SlNo>
+        <Name>Tommy</Name>
+        <UserID>41.0</UserID>
+        <Price>20.0</Price>
+    </datafile>
+    <datafile>
+        <SlNo>5.0</SlNo>
+        <Name>Maverick</Name>
+        <UserID>51.0</UserID>
+        <Price>90.0</Price>
+    </datafile>
+</root>
