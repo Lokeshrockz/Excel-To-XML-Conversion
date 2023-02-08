@@ -50,7 +50,8 @@ public class XML_Conversion {
 
          
         }
-       else{ 
+       if (j<list.size()) { 
+         System.out.println(list.get(j));
         Element cellElement = document.createElement(list.get(j));
         cellElement.appendChild(document.createTextNode(row.getCell(j).toString()));
 
