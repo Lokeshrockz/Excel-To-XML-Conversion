@@ -40,27 +40,43 @@ public class XML_Conversion {
 
       root.appendChild(rowElement);
       
-      for (int j = 0; j < row.getLastCellNum(); j++) {
-        
-        if(count==2){
-
+      if (i == 0) {
+        for (int j = 0; j < row.getLastCellNum(); j++) {
           list.add(String.valueOf(row.getCell(j)).replace(".", "").replace(" ", "")+""); 
-          // System.out.println(list);
           System.out.println(list.get(j));
+        }
+      } else {
+        for (int j = 0; j < row.getLastCellNum(); j++) {
+          if (j < list.size()) { 
+            System.out.println(list.get(j));
+            Element cellElement = document.createElement(list.get(j));
+            cellElement.appendChild(document.createTextNode(row.getCell(j).toString()));
+            rowElement.appendChild(cellElement);
+          }
+        }
+      }
+      
+//       for (int j = 0; j < row.getLastCellNum(); j++) {
+        
+//         if(count==2){
+
+//           list.add(String.valueOf(row.getCell(j)).replace(".", "").replace(" ", "")+""); 
+//           // System.out.println(list);
+//           System.out.println(list.get(j));
 
          
-        }
-       if (j<list.size()) { 
-         System.out.println(list.get(j));
-        Element cellElement = document.createElement(list.get(j));
-        cellElement.appendChild(document.createTextNode(row.getCell(j).toString()));
+//         }
+//        if (j<list.size()) { 
+//          System.out.println(list.get(j));
+//         Element cellElement = document.createElement(list.get(j));
+//         cellElement.appendChild(document.createTextNode(row.getCell(j).toString()));
 
-              // System.out.println(row.getCell(j));
-        rowElement.appendChild(cellElement );}
+//               // System.out.println(row.getCell(j));
+//         rowElement.appendChild(cellElement );}
        
        
-      }
-    }
+//       }
+//     }
 
     TransformerFactory transformerFactory = TransformerFactory.newInstance();
 
